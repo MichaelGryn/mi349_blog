@@ -23,5 +23,35 @@
         </div>
     </nav>
 
+    <section>
+        <form action="" method="get" class="form" netlify>
+            <br>
+            <div class="form">
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <br>
+            <div class="form">
+                <label for="name">Enter your email: </label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <br>
+            <div class="form">
+                <label for="reason">Reason for contact: </label>
+                <!-- <input type="text" name="reason" id="reason" required> -->
+                 <select id="reason" name="reason">
+                    <option value="say-hi">Saying Hi</option>
+                    <option value="contractor">Looking for a contractor</option>
+                    <option value="interview">Interested in an interview</option>
+                 </select>
+            </div>
+            <br>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <div class="form">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+
 </body>
 </html>
