@@ -24,31 +24,29 @@
     </nav>
 
     <!-- CONTACT FORM -->
-    <section>
-        <form netlify>
-            <br>
-            <div>
+    <section id="form-area">
+        <h2>Feedback Form:</h2>
+        <form netlify id="feedback-form">
+            <div class="form-line">
                 <label for="name">Enter your name: </label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name"  placeholder="Name" required>
             </div>
-            <br>
-            <div>
+            <div class="form-line">
                 <label for="name">Enter your email: </label>
-                <input type="text" name="email" id="email" required>
+                <input type="text" name="email" id="email" placeholder="example@email.com" required>
             </div>
-            <br>
-            <div>
+            <div class="form-line">
                 <label for="reason">Reason for contact: </label>
-                <!-- <input type="text" name="reason" id="reason" required> -->
                  <select id="reason" name="reason">
                     <option value="say-hi">Saying Hi</option>
                     <option value="contractor">Looking for a contractor</option>
                     <option value="interview">Interested in an interview</option>
                  </select>
             </div>
-            <br>
-            <textarea name="message" rows="10" cols="30"></textarea>
-            <div>
+            <div class="form-line">
+                <textarea name="message" rows="10" cols="30" placeholder="Additional Information"></textarea>
+            </div>
+            <div class="form-line">
                 <input type="submit" value="Submit">
             </div>
         </form>
